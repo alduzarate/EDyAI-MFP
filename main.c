@@ -16,13 +16,13 @@ int main(int argc, char const* argv[]) {
   if (error) {
     switch (error) {
       case 1:
-        printf("Error. El archivo %s no existe.\n", argv[1]);
+        printf("Error: El archivo %s no existe.\n", argv[1]);
         break;
       case 2:
-        printf("Error. El formato del archivo %s es incorrecto.\n", argv[1]);
+        printf("Error: El formato del archivo %s es incorrecto.\n", argv[1]);
         break;
       case 3:
-        printf("Error. Uno de los lados contiene un nodo inexistente.\n");
+        printf("Error: Uno de los lados contiene un nodo inexistente.\n");
     }
 
     grafo_destruir(datos);
@@ -42,10 +42,10 @@ int main(int argc, char const* argv[]) {
 
   /*
   printf("Capacidades:\n");
-  printMatrix(datos->A,datos->N);
-
+  imprimirMatriz(datos->A,datos->N);
+  
   printf("Flujos:\n");
-  printMatrix(flow,datos->N);
+  imprimirMatriz(flow,datos->N);
   */
 
   printf("Se ha encontrado una solución en %lfs.\n", ((double)timer) / CLOCKS_PER_SEC);

@@ -18,7 +18,7 @@ int grafo_cargar(char const* nombreDeArchivo, Grafo* datos) {
   char *nombreNodo;
   if (entrada == NULL) return 1;
 
-  char buffer1[MAX_LONGITUD_CIUDAD], buffer2[MAX_LONGITUD_CIUDAD];
+  char buffer1[MAX_LONGITUD_NODO], buffer2[MAX_LONGITUD_NODO];
 
   if (fscanf(entrada, "%s", buffer1) == EOF) {  // Ignoro "Fuente"
     fclose(entrada);

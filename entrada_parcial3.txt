@@ -1,0 +1,17 @@
+Fuente
+a
+Sumidero
+z
+Puntos Intermedios
+b,c,d,e,f
+Conexiones
+a,b,2
+a,c,4
+a,d,3
+b,c,2
+b,e,2
+c,f,3
+e,f,2
+f,z,5
+d,f,1
+d,z,10
